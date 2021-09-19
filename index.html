@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT FORM VALIDATION</title>
+    <script src="valid.js"></script>
+</head>
+<body>
+    <h1 align="center">STUDENT REGISTRATION FORM </h1>
+    <form name="register" id="studvalid" onsubmit="return validation()" action="recevie.php" method="POST">
+    <fieldset>
+        <br>
+        <br>    
+        <table cellspacing="15" align="center">
+            <tr>
+                <td><label>FIRST NAME:</label></td>
+                <td><input type="text" name="fname" placeholder="first name"></td>
+            </tr>
+            <tr>
+                <td><label>LAST NAME:</label></td>
+                <td><input type="text" name="lname" placeholder="last name"></td>
+            </tr>
+            <tr>
+                <td><label>YOUR AGE:</label></td>
+                <td><input type="integer" name="age"></td>
+            </tr>
+            <tr>
+                <td><label>EMAIL ID:</label></td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td><label>DATE OF BIRTH:</label></td>
+                <td><input type="date" name="date_of_birth"></td>
+            </tr>
+            <tr>
+                <td><label>GENDER:</label></td>
+                <td><input type="radio" name="gender" value="male" id="male" checked>male
+                    <input type="radio" name="gender" value="female" id="female">female
+                    <input type="radio" name="gender" value="other" id="other">other
+                </td>
+            </tr>
+            <tr>
+                <td><label>CHOOSE YOUR DEPARTMENT:</label></td>
+                <td><select name="department" id="depart">
+                    <option value="b.tech(ce)" selected>b.tech(ce)</option>
+                    <option value="b.tech(it)">b.tech(it)</option>
+                    <option value="b.tech(me)">b.tech(me)</option>
+                    </select>   
+                </td>
+            </tr>
+            <tr>
+                <td><label>COLLEGE NAME:</label></td>
+                <td><input type="text" name="college"></td>
+            </tr>
+            <tr>
+                <td><label for="mobile">MOBILE NUMBER:</label></td>
+                <td><input type="text" name="mobile" placeholder="mobile number"><br><span id="mobilee"></span></td>
+            </tr>
+            <tr>
+                <td><label>ENTER YOUR ADDRESS:</label></td>
+                <td><textarea name="address" rows="4" cols="60"></textarea></td>
+            </tr>
+            <tr>
+                <td><input type="submit"></td>
+                <td><input type="reset"></td>
+            </tr>
+        </table>
+    </fieldset>
+    </form>
+</body>
+</html>
